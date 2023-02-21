@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzy.a.mapper.FavorfolderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.lzy.a.entity.Favorfolder">
+        <id column="ffolderid" property="ffolderid" />
+        <result column="ffoldername" property="ffoldername" />
+        <result column="ownerid" property="ownerid" />
+        <result column="introduction" property="introduction" />
+        <result column="limit" property="limit" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ffolderid, ffoldername, ownerid, introduction, limit
+    </sql>
+
+</mapper>

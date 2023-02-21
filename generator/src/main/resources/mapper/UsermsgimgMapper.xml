@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzy.a.mapper.UsermsgimgMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.lzy.a.entity.Usermsgimg">
+        <id column="cid" property="cid" />
+        <result column="avatarName" property="avatarName" />
+        <result column="bkgName" property="bkgName" />
+        <result column="cname" property="cname" />
+        <result column="introduction" property="introduction" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        cid, avatarName, bkgName, cname, introduction
+    </sql>
+
+</mapper>
