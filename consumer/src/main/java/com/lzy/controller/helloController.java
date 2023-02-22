@@ -2,6 +2,7 @@ package com.lzy.controller;
 
 import com.lzy.api.consumerApiTest1;
 import com.lzy.api.consumerApiTest2;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
