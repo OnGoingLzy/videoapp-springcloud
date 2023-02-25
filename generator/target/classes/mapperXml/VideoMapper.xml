@@ -22,5 +22,9 @@
     <sql id="Base_Column_List">
         videoid, authorid, videoname, videopath, videoseconds, coverpath, likescount, status, createtime, tag, category, description
     </sql>
-
+    <update id="addLikeCountsByid" parameterType="java.lang.String">
+        update video
+        set likescount = likescount + 1
+        where videoid = #{videoid};
+    </update>
 </mapper>

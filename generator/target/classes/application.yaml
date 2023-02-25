@@ -4,9 +4,16 @@ spring:
     username: root
     password: lzy3122588
     driver-class-name: com.mysql.cj.jdbc.Driver
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: lzy3122588
+
 mybatis-plus:
-  mapper-locations: classpath:/a/mapper/*.xml
-  type-aliases-package: com.lzy.a.entity
+  mapper-locations: classpath*:mapperXml/*.xml
+#  type-aliases-package: com.lzy.a.entity
+  type-aliases-package: com.lzy.a.mapper
   configuration:
     auto-mapping-behavior: partial
     map-underscore-to-camel-case: true
@@ -15,3 +22,4 @@ mybatis-plus:
   global-config:
     db-config:
       id-type: auto
+  type-handlers-package: com.lzy.a.mapper
